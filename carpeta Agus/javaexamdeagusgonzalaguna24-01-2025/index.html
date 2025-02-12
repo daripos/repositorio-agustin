@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css"> 
+</head>
+    <body style="background-color:#6d9dca;"></body>
+
+    <button onclick="anterior()">ATRAS</button>
+    <button onclick="siguiente()">ADELANTE</button>
+
+    
+    <h1 id="frase">Frase</h1> 
+    <h2 id="autor">Autos</h2>
+    <p id="anion">Año</p>   
+    <img id="foto" src="" alt="">
+                      
+
+
+<script>
+const frases =[
+    [' La investigación está creando nuevos conocimientos.', 'Neil Amstron', 1979,'https://porscheeveryday.es/sites/default/files/images/Porschemodel.jpg'],
+    ['La vida es como una caja de bombones', 'Forrest Gump', 1994,'https://porscheeveryday.es/sites/default/files/images/ferdinand_porsche.jpg'],
+    ['Que la fuerza te acompañe', 'Star Wars', 1977,'https://porscheeveryday.es/sites/default/files/images/ca1959-copyright-porsche.jpg'],
+    ['Hasta el infinito y más allá', 'Toy Story', 1995,'https://porscheeveryday.es/sites/default/files/images/ca1959-copyright-porsche.jpg'],
+    ['La vida es bella', 'La vida es bella', 1997,'https://porscheeveryday.es/sites/default/files/images/1954sons-copyright-porsche.jpg']
+];
+                                       
+
+let i = 0;
+                  
+document.getElementById('frase').innerHTML = frases[i][0];
+document.getElementById('autor').innerHTML = frases[i][1];
+document.getElementById('anion').innerHTML = frases[i][2];
+document.getElementById('foto').src = frases[i][3];
+
+
+function siguiente(){
+    i++;
+    if(i >= frases.length){
+        i = 0;
+    }
+    document.getElementById('frase').innerHTML = frases[i][0];
+    document.getElementById('autor').innerHTML = frases[i][1];
+    document.getElementById('anion').innerHTML = frases[i][2];
+    document.getElementById('foto').src = frases[i][3];
+}
+
+
+function anterior(){
+    i--;
+    if(i < 0){
+        i = frases.length - 1;
+    }
+    document.getElementById('frase').innerHTML = frases[i][0];
+    document.getElementById('autor').innerHTML = frases[i][1];
+    document.getElementById('anion').innerHTML = frases[i][2];
+    document.getElementById('foto').src = frases[i][3];
+}
+
+
+
+</script>
+
+</body>
+</html>

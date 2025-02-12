@@ -1,0 +1,20 @@
+.botonera{
+display:grid;
+grid-template-columns: 60px 60px;
+border-radius:80px;
+padding:30px;
+color:rgb(138, 43, 226);
+flex-wrap:wrap;
+display: table-cell;
+border: 5px solid blue;
+
+
+}
+.calculadora{
+  justify-content:center;
+  flex-wrap: wrap;
+  grid-template-columns: 60px 60px;
+  background: rgb(49, 24, 34);
+
+
+}
