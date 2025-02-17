@@ -1,0 +1,25 @@
+{
+    "peliscartelera": [
+      {
+        "titulo": "El Padrino",
+        "anio": 1972,
+        "genero": "Drama",
+        "duracion": 175,
+        "poster": "https://pics.filmaffinity.com/memoir_of_a_snail-469448562-large.jpg"
+      },
+      {
+        "titulo": "Inception",
+        "anio": 2010,
+        "genero": "Ciencia Ficción",
+        "duracion": 148,
+        "poster": "https://pics.filmaffinity.com/greedy_people-644648555-large.jpg"
+      },
+      {
+        "titulo": "Titanic",
+        "anio": 1997,
+        "genero": "Romance",
+        "duracion": 195,
+        "poster": "https://pics.filmaffinity.com/finnick-524461236-large.jpg"
+      }
+    ]
+  }
